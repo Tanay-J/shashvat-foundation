@@ -223,7 +223,7 @@ function findCommonOffsetParent(element1, element2) {
   }
 
   // Here we make sure to give as "start" the element that comes first in the DOM
-  var order = element1  pareDocumentPosition(element2) & Node.DOCUMENT_POSITION_FOLLOWING;
+  var order = element1.compareDocumentPosition(element2) & Node.DOCUMENT_POSITION_FOLLOWING;
   var start = order ? element1 : element2;
   var end = order ? element2 : element1;
 
@@ -231,7 +231,7 @@ function findCommonOffsetParent(element1, element2) {
   var range = document.createRange();
   range.setStart(start, 0);
   range.setEnd(end, 0);
-  var commonAncestorContainer = range  monAncestorContainer;
+  var commonAncestorContainer = range.commonAncestorContainer;
 
   // Both nodes are inside #document
 
@@ -1941,7 +1941,7 @@ var modifiers = {
    * ```
    * > **NB**: If you desire to apply offsets to your poppers in a way that may make them overlap
    * > with their reference element, unfortunately, you will have to disable the `flip` modifier.
-   * > More on this [reading this issue](https://github  /FezVrasta/popper.js/issues/373)
+   * > More on this [reading this issue](https://github.com/FezVrasta/popper.js/issues/373)
    *
    * @memberof modifiers
    * @inner
