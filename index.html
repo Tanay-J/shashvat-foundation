@@ -34,6 +34,14 @@
     />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/header.css" />
+
+    <script>
+      if (window.location.hostname !== '127.0.0.1') {
+          const base = document.createElement('base');
+          base.href = '/shashvat-foundation/'; 
+          document.head.appendChild(base);
+      }
+  </script>
   </head>
 
   <body>
