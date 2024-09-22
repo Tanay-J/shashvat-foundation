@@ -33,7 +33,7 @@ header{
                     }
                 }
                 .donta-btn{
-                    background-color: #ff5722;
+                    background-color: orange;
                     color: #FFF;
                     padding: 5px 15px;
                     border-radius: 5px;
@@ -303,7 +303,7 @@ header{
 			img{
 				width: 120px;
 				border-radius: 50%;
-				border:5px solid #ff5722;
+				border:5px solid orange;
 				@include shado-1();
 				margin-bottom: 20px;
 			}
@@ -345,9 +345,9 @@ header{
 	}
 }
 
-/* =================== Upcomming Style Starts Here =================== */
+/* =================== upcoming Style Starts Here =================== */
 
-.upcomming{
+.upcoming{
 	background-color: #FFF;
 	@include big-padding();
 	.events-row{
@@ -403,7 +403,7 @@ header{
 					color: #f78d15;
 				}
 				h2{
-					color: #ff5722;
+					color: orange;
 				}
 			}
 		}
@@ -446,7 +446,7 @@ header{
   text-indent: 20px;
   margin-bottom: 10px; }
 .blog .blog-singe .blog-content-tab a {
-  color: #ff5722;
+  color: orange;
   font-size: 12px; }
 .blog .blog-singe .blog-content-tab a i {
   margin-left: 15px;
@@ -519,7 +519,7 @@ header{
 
 .footer-ablove {
   padding: 30px;
-  background-color: #ff5722;
+  background-color: orange;
   color: #FFF;
   font-size: 1.5rem; }
 .footer-ablove .btn {
