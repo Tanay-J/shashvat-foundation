@@ -802,8 +802,9 @@ body {
   font-size: 2rem;
   color: #2c3e50;
   text-align: center;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
   position: relative;
+  text-align: left;
 }
 
 .session-title h2::after {
@@ -813,9 +814,6 @@ body {
   height: 4px;
   background-color: #e67e22;
   position: absolute;
-  /* bottom: -15px;
-  left: 50%;
-  transform: translateX(-50%); */
 }
 
 .shashvat-row {
@@ -885,6 +883,7 @@ body {
 /* =================== We are Making Style Starts Here =================== */
 .we-are-making .text-part {
   padding: 60px;
+  padding-top: 30px;
   padding-left: 20px;
 }
 .we-are-making .text-part h3 {
