@@ -303,24 +303,34 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.shashvat-logo {
-  flex-shrink: 0;
-}
+
 .shashvat-logo img {
   max-width: 180px;
   height: auto;
+  transition: transform 0.5s ease;
 }
+
+.shashvat-logo:hover img {
+  transform: scale(1.25); 
+}
+
 .shashvat-site-title {
   flex-grow: 1;
   text-align: left;
-  margin-left: 20px;
+  margin-left: 24px; 
+  transition: margin-left 0.5s ease; 
 }
+
+.shashvat-logo:hover + .shashvat-site-title {
+  margin-left: 40px; 
+}
+
 .shashvat-site-title h1 {
-  /* color: #ecf0f1; */
-  font-size: 1.8rem;
+  /* color: orange; */
+  font-size: 1.5rem;
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  font-weight: 600;
+  text-transform: uppercase;
 }
 .shashvat-nav {
   flex-shrink: 0;
@@ -375,6 +385,8 @@ body {
       margin: 5px;
   }
 }
+
+
 /* =================== Slider Style Starts Here =================== */
 .slider {
   position: relative;
@@ -958,7 +970,7 @@ body {
 
 .blog .blog-singe .blog-content-tab .nl-download {
   color: orange;
-  font-size: 20px;
+
 }
 
 /* .blog .blog-singe .blog-content-tab a {
@@ -967,7 +979,6 @@ body {
 } */
 
 .blog .blog-singe .blog-content-tab a i {
-  margin-left: 15px;
   font-size: 13px;
 }
 
@@ -1179,4 +1190,9 @@ blockquote {
 
 .contact-info a:hover {
   text-decoration: underline;
+}
+
+/* common */
+.ml-10 {
+  margin-left: 10px;
 }
