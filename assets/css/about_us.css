@@ -200,10 +200,6 @@
   border-radius: 50%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-.team-photo.associates {
-  width: 150px;
-  height: 150px;
-}
 
 .team-name {
   font-size: 24px;
@@ -215,4 +211,40 @@
   font-size: 18px;
   color: #666;
   margin-top: 5px;
+}
+
+
+
+.team-list {
+  width: fit-content;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.team-member {
+  margin-bottom: 20px;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.team-member:last-child {
+  border-bottom: none;
+}
+
+.team-member h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.team-member p {
+  margin: 8px 0 0;
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.4;
 }
