@@ -1181,6 +1181,7 @@ blockquote {
 
 .contact-info p {
   margin-bottom: 10px;
+  font-size: 24px;
 }
 
 .contact-info a {
@@ -1198,5 +1199,5 @@ blockquote {
 }
 
 .contact-info .contact-text {
-  font-size: 24px;
+  font-size: 28px;
 }
