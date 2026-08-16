@@ -1,0 +1,93 @@
+---
+// Footer.astro
+---
+<footer class="bg-slate-950 text-white pt-20 pb-10 border-t border-orange-900/50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+      <!-- Contact Info -->
+      <div>
+        <h3 class="text-2xl font-bold mb-6 text-white flex items-center gap-2">
+          <span class="w-8 h-1 bg-orange-500 rounded-full"></span>
+          Contact Us
+        </h3>
+        <ul class="space-y-5">
+          <li class="flex items-start group">
+            <div class="bg-orange-500/10 p-2 rounded-lg mr-4 group-hover:bg-orange-500/20 transition-colors">
+              <svg class="h-6 w-6 text-orange-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            </div>
+            <span class="text-slate-300 leading-relaxed group-hover:text-white transition-colors">Shashvat Paediatric Care Foundation<br/>Plot no: 51, Narkesari Layout<br/>Jaiprakash Nagar, Khamla,<br/>Nagpur-440025</span>
+          </li>
+          <li class="flex items-center group">
+            <div class="bg-orange-500/10 p-2 rounded-lg mr-4 group-hover:bg-orange-500/20 transition-colors">
+              <svg class="h-6 w-6 text-orange-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+            </div>
+            <a href="tel:+917666314967" class="text-slate-300 hover:text-orange-400 transition-colors font-medium">+91-7666314967</a>
+          </li>
+          <li class="flex items-center group">
+            <div class="bg-orange-500/10 p-2 rounded-lg mr-4 group-hover:bg-orange-500/20 transition-colors">
+              <svg class="h-6 w-6 text-orange-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <a href="mailto:shashvatpaediatriccare@gmail.com" class="text-slate-300 hover:text-orange-400 transition-colors font-medium">shashvatpaediatriccare@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h3 class="text-2xl font-bold mb-6 text-white flex items-center gap-2">
+          <span class="w-8 h-1 bg-orange-500 rounded-full"></span>
+          Important Links
+        </h3>
+        <ul class="space-y-4">
+          <li><a href="/about_us" class="text-slate-300 hover:text-orange-400 flex items-center gap-2 group transition-colors"><span class="h-1 w-1 bg-orange-500 rounded-full group-hover:w-3 transition-all"></span>About Us</a></li>
+          <li><a href="/about_us#ourTeam" class="text-slate-300 hover:text-orange-400 flex items-center gap-2 group transition-colors"><span class="h-1 w-1 bg-orange-500 rounded-full group-hover:w-3 transition-all"></span>Our Team</a></li>
+          <li><a href="/newsletters" class="text-slate-300 hover:text-orange-400 flex items-center gap-2 group transition-colors"><span class="h-1 w-1 bg-orange-500 rounded-full group-hover:w-3 transition-all"></span>Newsletters</a></li>
+        </ul>
+      </div>
+
+      <!-- Gallery Snapshot -->
+      <div>
+        <h3 class="text-2xl font-bold mb-6 text-white flex items-center gap-2">
+          <span class="w-8 h-1 bg-orange-500 rounded-full"></span>
+          <a href="/photo_gallery" class="hover:text-orange-400 transition-colors">Photo Gallery</a>
+        </h3>
+        <div class="grid grid-cols-3 gap-3">
+          <div class="overflow-hidden rounded-xl aspect-square group">
+            <img src="/assets/images/gallery/g1.jpg" alt="Gallery image 1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 cursor-pointer" />
+          </div>
+          <div class="overflow-hidden rounded-xl aspect-square group">
+            <img src="/assets/images/gallery/g2.jpg" alt="Gallery image 2" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 cursor-pointer" />
+          </div>
+          <div class="overflow-hidden rounded-xl aspect-square group">
+            <img src="/assets/images/gallery/g3.jpg" alt="Gallery image 3" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 cursor-pointer" />
+          </div>
+          <div class="overflow-hidden rounded-xl aspect-square group">
+            <img src="/assets/images/gallery/g4.jpg" alt="Gallery image 4" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 cursor-pointer" />
+          </div>
+          <div class="overflow-hidden rounded-xl aspect-square group">
+            <img src="/assets/images/gallery/g5.jpg" alt="Gallery image 5" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 cursor-pointer" />
+          </div>
+          <div class="overflow-hidden rounded-xl aspect-square group">
+            <img src="/assets/images/gallery/g6.jpg" alt="Gallery image 6" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 cursor-pointer" />
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Copyright -->
+    <div class="border-t border-slate-800 pt-8 mt-8 flex flex-col md:flex-row justify-between items-center text-slate-400 text-sm">
+      <p>&copy; {new Date().getFullYear()} Shashvat Paediatric Care Foundation. All Rights Reserved.</p>
+      <div class="flex gap-4 mt-4 md:mt-0">
+        <a href="#" class="hover:text-emerald-400 transition-colors">Privacy Policy</a>
+        <a href="#" class="hover:text-emerald-400 transition-colors">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>

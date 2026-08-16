@@ -1,0 +1,62 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const newsletters = [
+  { vol: 8, date: "March 2026", desc: "QUARTERLY IMPACT NEWSLETTER", link: "/assets/newsletters/nl-8.pdf" },
+  { vol: 7, date: "Nov 2025", desc: "QUARTERLY IMPACT NEWSLETTER", link: "/assets/newsletters/nl-7.pdf" },
+  { vol: 6, date: "Dec 2024", desc: "Shashvat Paediatric Care Foundation is pleased to assist in the cancer treatment of 9 children at Tata Memorial Hospital, Mumbai", link: "/assets/newsletters/nl-6.pdf" },
+  { vol: 5, date: "July 2024", desc: "Shashvat Paediatric Care Foundation is fortunate to contribute towards cancer treatment of 4 children at Tata Memorial Hospital, Mumbai", link: "/assets/newsletters/nl-5.pdf" },
+  { vol: 4, date: "March 2024", desc: "Shashvat Paediatric Care Foundation is fortunate to contribute Rs. 2,25,000/- towards cancer treatment of 5 children at Tata Memorial Hospital, Mumbai", link: "/assets/newsletters/nl-4.pdf" },
+  { vol: 3, date: "Nov 2023", desc: "Shashvat Paediatric Care Foundation is fortunate to sponsor funds for the cancer treatment of Master Krushna Wanre (12 yrs), receiving treatment at the National Cancer Institute, Nagpur", link: "/assets/newsletters/nl-3.pdf" },
+  { vol: 2, date: "July 2023", desc: "Shashvat Paediatric Care Foundation is fortunate to sponsor funds for the cancer treatment of 7 children at Tata Memorial Hospital, Mumbai.", link: "/assets/newsletters/nl-2.pdf" },
+  { vol: 1, date: "Nov 2022", desc: "Inaugural Newsletter", link: "/assets/newsletters/nl-1.pdf" }
+];
+---
+
+<Layout title="Newsletters | Shashvat Paediatric Care Foundation">
+  <!-- Page Header -->
+  <div class="relative bg-slate-950 py-8 sm:py-10 overflow-hidden border-b border-orange-900/30">
+    <div class="absolute inset-0 bg-[url('/assets/images/tmh.jpg')] bg-cover bg-center opacity-10 mix-blend-luminosity"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/80 to-transparent"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-500/10 border border-orange-500/20 text-orange-400 font-bold text-xs mb-4 uppercase tracking-widest backdrop-blur-sm">
+        <span class="w-1.5 h-1.5 rounded-full bg-orange-500 animate-pulse"></span>
+        Stay Informed
+      </div>
+      <h1 class="text-4xl md:text-5xl font-extrabold text-white tracking-tight mb-4">Our Newsletters</h1>
+      <p class="text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed">Read our latest updates and learn about the impact we've made together.</p>
+    </div>
+  </div>
+
+  <section class="py-24 bg-orange-50/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {newsletters.map(nl => (
+          <div class="bg-white rounded-3xl shadow-lg shadow-slate-200/50 hover:shadow-2xl hover:shadow-orange-900/10 transition-all duration-300 overflow-hidden flex flex-col h-full border border-slate-100 group relative">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-orange-100 to-amber-50 opacity-20 group-hover:opacity-100 rounded-full blur-3xl transform translate-x-10 -translate-y-10 transition-all duration-700"></div>
+            
+            <div class="p-8 flex-grow flex flex-col relative z-10">
+              <div class="flex items-center justify-between mb-6">
+                <span class="px-4 py-1.5 bg-orange-100 text-orange-800 text-xs font-bold rounded-full uppercase tracking-widest shadow-sm">Vol. {nl.vol}</span>
+                <span class="text-sm font-bold text-slate-400">{nl.date}</span>
+              </div>
+              <h2 class="text-2xl font-bold text-slate-900 mb-4 group-hover:text-orange-600 transition-colors">SPCF Vol. {nl.vol}</h2>
+              <p class="text-slate-600 mb-8 flex-grow leading-relaxed">{nl.desc}</p>
+              
+              <div class="flex gap-4 mt-auto pt-6 border-t border-slate-100">
+                <a href={nl.link} target="_blank" class="flex-1 inline-flex justify-center items-center px-4 py-3 bg-[var(--color-primary)] hover:bg-orange-600 text-white text-sm font-bold rounded-xl transition-colors shadow-md hover:shadow-lg hover:shadow-orange-500/20">
+                  <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                  View
+                </a>
+                <a href={nl.link} download class="flex-1 inline-flex justify-center items-center px-4 py-3 bg-white border-2 border-slate-200 hover:border-orange-200 hover:bg-orange-50 text-slate-700 hover:text-orange-700 text-sm font-bold rounded-xl transition-colors">
+                  <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                  Download
+                </a>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>
